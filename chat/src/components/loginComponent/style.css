@@ -1,0 +1,8 @@
+.log-in-block-true, .log-in-block-false {
+  position: fixed;
+}
+
+.log-in-block-false {
+  display: grid;
+  justify-content: right
+}

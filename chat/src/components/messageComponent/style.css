@@ -1,0 +1,9 @@
+.list-with-messages, .container-with-inputs {
+  display: grid;
+  justify-content: center;
+}
+
+.list-with-messages {
+  list-style-type: none;
+  overflow: auto;
+}
