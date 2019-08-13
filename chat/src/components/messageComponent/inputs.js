@@ -58,6 +58,8 @@ class Inputs extends React.Component {
         console.log('Обрыв соединения'); // например, "убит" процесс сервера
       }
       console.log(`Код: ${event.code} причина: ${event.reason}`);
+      alert('Произошла ошибка на сервере, нажмите ОК, чтобы перезайти на сервер.');
+      window.location.reload();
     };
 
     this.socket.onmessage = (event) => {
@@ -66,6 +68,8 @@ class Inputs extends React.Component {
 
     this.socket.onerror = (error) => {
       console.log(`Ошибка ${error.message}`);
+      alert('Произошла ошибка на сервере, нажмите ОК, чтобы перезайти на сервер.');
+      window.location.reload();
     };
   }
 
